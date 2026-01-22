@@ -53,9 +53,9 @@ Traditional payments are **discrete and inflexible**:
 
 **Try it now (no installation required):**
 
-* 🌐 **Live App**: [https://YOUR-VERCEL-URL.vercel.app](https://YOUR-VERCEL-URL.vercel.app)
+* 🌐 **Live App**: [https://streampay-9ui8.vercel.app/](https://streampay-9ui8.vercel.app/)
 * 📜 **Testnet Contract**: `ST30J9EZKY44SS1EBT8XNKJFA77Z4TSDBEMZ55MEJ.precious-white-sparrow`
-* 🔍 **Block Explorer**: [https://explorer.hiro.so/?chain=testnet](https://explorer.hiro.so/?chain=testnet)
+* 🔍 **Block Explorer**: [https://explorer.hiro.so/txid/ST30J9EZKY44SS1EBT8XNKJFA77Z4TSDBEMZ55MEJ.precious-white-sparrow?chain=testnet](https://explorer.hiro.so/txid/ST30J9EZKY44SS1EBT8XNKJFA77Z4TSDBEMZ55MEJ.precious-white-sparrow?chain=testnet)
 * 🎥 **Demo Video**: [https://youtube.com/watch?v=VIDEO-ID](https://youtube.com/watch?v=VIDEO-ID)
 
 ### Quick Start (Judges)

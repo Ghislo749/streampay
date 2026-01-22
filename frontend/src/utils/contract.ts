@@ -114,9 +114,9 @@ export async function resumeStream(streamId: number) {
 }
 
 // Top-up an existing stream with additional funds (sender only)
-export async function topUpStream(streamId: number, additionalAmount: bigint) {
+export async function topUpStream(sender: string, streamId: number, additionalAmount: bigint) {
 
-    let pc1 = Pc.principal(CONTRACT_ADDRESS).willSendEq(additionalAmount).ft(USDCX_CONTRACT, 'usdcx-token')
+    let pc1 = Pc.principal(sender).willSendEq(additionalAmount).ft(USDCX_CONTRACT, 'usdcx-token')
 
     const functionArgs = [
         Cl.uint(streamId),
