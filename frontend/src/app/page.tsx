@@ -64,20 +64,26 @@ export default function Home() {
   }, [address, fetchBalance]);
 
   async function connectWallet() {
+    setIsConnecting(true);
 
-    setIsConnecting(true)
+    try {
+      if (isConnected()) {
+        console.log('Already authenticated');
+        setIsConnecting(false);
+        return;
+      }
 
-    if (isConnected()) {
-      console.log('Already authenticated');
-      return;
+      let connectionResponse: GetAddressesResult = await connect({ network: 'testnet' });
+      let bnsName = await getBns(connectionResponse.addresses[2].address);
+
+      console.log('Full addresses response:', connectionResponse.addresses);
+      setAddress(connectionResponse.addresses[2].address);
+      setBns(bnsName);
+    } catch (error) {
+      console.log('User cancelled wallet connection or error occurred:', error);
+    } finally {
+      setIsConnecting(false);
     }
-
-    let connectionResponse: GetAddressesResult = await connect({ network: 'testnet' })
-    let bnsName = await getBns(connectionResponse.addresses[2].address)
-    console.log('Full addresses response:', connectionResponse.addresses);
-    setAddress(connectionResponse.addresses[2].address)
-    setBns(bnsName)
-    setIsConnecting(false)
   }
 
   async function getBns(stxAddress: string) {
