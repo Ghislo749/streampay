@@ -8,10 +8,6 @@
 
 ---
 
-![StreamPay Banner](https://via.placeholder.com/1200x400/1a1b26/f97316?text=StreamPay+-+Payment+Streaming+on+Bitcoin)
-
----
-
 ## 🎯 Problem
 
 Traditional payments are **discrete and inflexible**:
@@ -56,7 +52,7 @@ Traditional payments are **discrete and inflexible**:
 * 🌐 **Live App**: [https://streampay-9ui8.vercel.app/](https://streampay-9ui8.vercel.app/)
 * 📜 **Testnet Contract**: `ST30J9EZKY44SS1EBT8XNKJFA77Z4TSDBEMZ55MEJ.precious-white-sparrow`
 * 🔍 **Block Explorer**: [https://explorer.hiro.so/txid/ST30J9EZKY44SS1EBT8XNKJFA77Z4TSDBEMZ55MEJ.precious-white-sparrow?chain=testnet](https://explorer.hiro.so/txid/ST30J9EZKY44SS1EBT8XNKJFA77Z4TSDBEMZ55MEJ.precious-white-sparrow?chain=testnet)
-* 🎥 **Demo Video**: [https://youtube.com/watch?v=VIDEO-ID](https://youtube.com/watch?v=VIDEO-ID)
+* 🎥 **Demo Video**: [https://www.youtube.com/watch?v=WNxcNMz-GNA](https://www.youtube.com/watch?v=WNxcNMz-GNA)
 
 ### Quick Start (Judges)
 
@@ -158,7 +154,7 @@ owed = min(earned, remaining-deposit)
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR-USERNAME/streampay.git
+git clone https://github.com/Ghislo749/streampay
 cd streampay/frontend
 
 npm install
@@ -220,8 +216,8 @@ MIT — see [LICENSE](LICENSE)
 
 **YOUR NAME**
 
-* GitHub: [https://github.com/YOUR-GITHUB](https://github.com/YOUR-GITHUB)
-* Twitter: [https://twitter.com/YOUR-TWITTER](https://twitter.com/YOUR-TWITTER)
+* GitHub: [https://github.com/Ghislo749](https://github.com/Ghislo749)
+* Twitter: [https://x.com/Ghislo749_](https://x.com/Ghislo749_)
 
 ---
 
