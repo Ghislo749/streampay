@@ -655,6 +655,7 @@ function StreamCard({ stream, walletAddress }: any) {
       {showTopUpModal && (
         <TopUpModal
           streamId={stream.id}
+          address={walletAddress}
           onClose={() => setShowTopUpModal(false)}
         />
       )}
@@ -930,7 +931,7 @@ function CreateStreamModal({ onClose, senderAddress, balance }: { onClose: () =>
 }
 
 // Component: Top-up Modal
-function TopUpModal({ streamId, onClose }: { streamId: number; onClose: () => void }) {
+function TopUpModal({ streamId, address, onClose }: { streamId: number; address: string, onClose: () => void }) {
   const [amount, setAmount] = useState('');
   const [isTopping, setIsTopping] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -946,7 +947,7 @@ function TopUpModal({ streamId, onClose }: { streamId: number; onClose: () => vo
     setIsTopping(true);
 
     try {
-      await topUpStream(streamId, toMicroUSDCx(parseFloat(amount)));
+      await topUpStream(address, streamId, toMicroUSDCx(parseFloat(amount)));
       onClose();
     } catch (e: any) {
       setError(e.message || 'Top-up failed');
